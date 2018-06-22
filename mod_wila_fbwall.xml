@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>WILA FB Wall</name>
+    <author>Stefan Kellenberger</author>
+    <version>1.0.0</version>
+    <description>A simple FB Wall Module.</description>
+    <creattionDate>28 July 2017</creattionDate>
+    <copyright>Copyright (C) 2017 by WILA-WEB. All rights reserved.</copyright>
+    <authorEmail>info@wila-web.de</authorEmail>
+    <authorUrl>https://wila-web.de</authorUrl>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+
+
+    <files>
+        <filename>mod_wila_fbwall.xml</filename>
+        <filename module="mod_wila_fbwall">mod_wila_fbwall.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>php-graph-sdk-5.5</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="fb_username" type="text" default="sonja.luethi.sg" label="Facebook Username" />
+                <field name="fb_app_id" type="text" default="1998570413756466" label="Facebook APP ID" />
+                <field name="fb_app_secret" type="text" default="f4bc61b18d6711768f8cb60596124cca" label="Facebook APP Secret" />
+                <field name="fb_app_token" type="text" default="1998570413756466|q9B5uCkD3DL6SF1WRsRDO-mtb3M" label="Facebook APP Token" />
+                <field name="fb_num_posts" type="text" default="20" label="# Posts to Display" />
+                <field name="load_jquery" type="radio" class="btn-group btn-group-yesno" default="1" label="Load jQuery">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
